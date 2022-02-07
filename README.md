@@ -3,5 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 ![example workflow](https://github.com/elisad5791/frontend-project-lvl1/actions/workflows/make-lint.yml/badge.svg)
 
-### Demo-video: 
-https://asciinema.org/a/467039
+### Demo 
+Brain Even [Demo video](https://asciinema.org/a/467039)
+Brain Calc [Demo video](https://asciinema.org/a/467336)
