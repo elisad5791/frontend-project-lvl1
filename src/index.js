@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import calc from './games/calc.js';
 import even from './games/even.js';
+import gcd from './games/gcd.js';
 
 const game = (gameTitle, gameRounds) => {
   let rulesMessage;
@@ -10,6 +11,9 @@ const game = (gameTitle, gameRounds) => {
       break;
     case 'even':
       rulesMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
+      break;
+    case 'gcd':
+      rulesMessage = 'Find the greatest common divisor of given numbers.';
       break;
     default:
       break;
@@ -29,6 +33,9 @@ const game = (gameTitle, gameRounds) => {
         break;
       case 'even':
         round = even();
+        break;
+      case 'gcd':
+        round = gcd();
         break;
       default:
         break;

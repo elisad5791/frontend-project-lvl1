@@ -7,3 +7,5 @@
 Brain Even [Demo video](https://asciinema.org/a/467039)
 
 Brain Calc [Demo video](https://asciinema.org/a/467336)
+
+Brain Gcd [Demo video](https://asciinema.org/a/467356)
