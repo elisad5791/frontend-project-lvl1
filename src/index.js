@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import calc from './games/calc.js';
 import even from './games/even.js';
 import gcd from './games/gcd.js';
+import progression from './games/progression.js';
 
 const game = (gameTitle, gameRounds) => {
   let rulesMessage;
@@ -14,6 +15,9 @@ const game = (gameTitle, gameRounds) => {
       break;
     case 'gcd':
       rulesMessage = 'Find the greatest common divisor of given numbers.';
+      break;
+    case 'progression':
+      rulesMessage = 'What number is missing in the progression?';
       break;
     default:
       break;
@@ -36,6 +40,9 @@ const game = (gameTitle, gameRounds) => {
         break;
       case 'gcd':
         round = gcd();
+        break;
+      case 'progression':
+        round = progression();
         break;
       default:
         break;

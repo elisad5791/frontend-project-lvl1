@@ -1,8 +1,8 @@
 const calc = () => {
   const operators = ['+', '-', '*'];
 
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = Math.floor(Math.random() * 101);
+  const num2 = Math.floor(Math.random() * 101);
   const i = Math.floor(Math.random() * 3);
 
   const question = `${num1} ${operators[i]} ${num2}`;

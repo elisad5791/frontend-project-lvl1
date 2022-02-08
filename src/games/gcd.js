@@ -1,8 +1,8 @@
 const isCommonDenominator = (num1, num2, i) => num1 % i === 0 && num2 % i === 0;
 
 const gcd = () => {
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = Math.floor(Math.random() * 101);
+  const num2 = Math.floor(Math.random() * 101);
   const question = `${num1} ${num2}`;
 
   let result;
