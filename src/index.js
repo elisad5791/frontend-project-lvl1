@@ -3,6 +3,7 @@ import calc from './games/calc.js';
 import even from './games/even.js';
 import gcd from './games/gcd.js';
 import progression from './games/progression.js';
+import prime from './games/prime.js';
 
 const game = (gameTitle, gameRounds) => {
   let rulesMessage;
@@ -18,6 +19,9 @@ const game = (gameTitle, gameRounds) => {
       break;
     case 'progression':
       rulesMessage = 'What number is missing in the progression?';
+      break;
+    case 'prime':
+      rulesMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
       break;
     default:
       break;
@@ -43,6 +47,9 @@ const game = (gameTitle, gameRounds) => {
         break;
       case 'progression':
         round = progression();
+        break;
+      case 'prime':
+        round = prime();
         break;
       default:
         break;
