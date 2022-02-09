@@ -7,7 +7,7 @@
 
 ### Description
 
-Mind Games is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. If the answer is incorrect, the game ends and the user is prompted to try again. 
+Brain Games is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. If the answer is incorrect, the game ends and the user is prompted to try again. 
 
 Games:
 
@@ -17,8 +17,9 @@ Games:
 - Finding the Greatest Common Divisor.
 - Definition of a prime number.
 
-### Setup
+This project is is created during training at [Hexlet](https://ru.hexlet.io), a programming online school.
 
+### Setup
 
     make install
     npm link
@@ -34,16 +35,14 @@ Games:
 
 ### Demo 
 
-Installation [video] (https://asciinema.org/a/467039)
-
-Brain Even [video](https://asciinema.org/a/467039)
+Setup [video](https://asciinema.org/a/467039)
 
 Brain Calc [video](https://asciinema.org/a/467336)
 
-Brain Gcd [video](https://asciinema.org/a/467356)
-
 Brain Progression [video](https://asciinema.org/a/467504)
 
-Brain Prime [video](https://asciinema.org/a/467506)
+Brain Even [video](https://asciinema.org/a/467039)
 
-This project is is created during training at Hexlet, a programming online school.
+Brain Gcd [video](https://asciinema.org/a/467356)
+
+Brain Prime [video](https://asciinema.org/a/467506)
