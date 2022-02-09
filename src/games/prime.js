@@ -7,12 +7,13 @@ const isPrime = (num) => {
   return true;
 };
 
-const prime = () => {
-  const num = Math.floor(Math.random() * 101);
+const doStepPrime = () => {
+  const maxNumber = 100;
+  const num = Math.floor(Math.random() * (maxNumber + 1));
   const question = String(num);
   const answer = isPrime(num) ? 'yes' : 'no';
 
   return [question, answer];
 };
 
-export default prime;
+export default doStepPrime;

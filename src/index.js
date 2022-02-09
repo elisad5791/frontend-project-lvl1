@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import calc from './games/calc.js';
-import even from './games/even.js';
-import gcd from './games/gcd.js';
-import progression from './games/progression.js';
-import prime from './games/prime.js';
+import doStepCalc from './games/calc.js';
+import doStepEven from './games/even.js';
+import doStepGcd from './games/gcd.js';
+import doStepProgression from './games/progression.js';
+import doStepPrime from './games/prime.js';
 
-const game = (gameTitle, gameRounds) => {
+const initGame = (gameTitle, gameRounds) => {
   let rulesMessage;
   switch (gameTitle) {
     case 'calc':
@@ -37,31 +37,31 @@ const game = (gameTitle, gameRounds) => {
     let round;
     switch (gameTitle) {
       case 'calc':
-        round = calc();
+        round = doStepCalc();
         break;
       case 'even':
-        round = even();
+        round = doStepEven();
         break;
       case 'gcd':
-        round = gcd();
+        round = doStepGcd();
         break;
       case 'progression':
-        round = progression();
+        round = doStepProgression();
         break;
       case 'prime':
-        round = prime();
+        round = doStepPrime();
         break;
       default:
         break;
     }
-    const [question, rightAnswer] = round;
+    const [question, correctAnswer] = round;
 
     console.log(`Question: ${question}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer === rightAnswer) {
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       result = false;
       break;
@@ -73,4 +73,4 @@ const game = (gameTitle, gameRounds) => {
   }
 };
 
-export default game;
+export default initGame;

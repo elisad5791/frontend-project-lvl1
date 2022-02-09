@@ -1,13 +1,14 @@
-const calc = () => {
+const doStepCalc = () => {
   const operators = ['+', '-', '*'];
 
-  const num1 = Math.floor(Math.random() * 101);
-  const num2 = Math.floor(Math.random() * 101);
-  const i = Math.floor(Math.random() * 3);
+  const maxNumber = 100;
+  const num1 = Math.floor(Math.random() * (maxNumber + 1));
+  const num2 = Math.floor(Math.random() * (maxNumber + 1));
+  const operationIndex = Math.floor(Math.random() * operators.length);
 
-  const question = `${num1} ${operators[i]} ${num2}`;
+  const question = `${num1} ${operators[operationIndex]} ${num2}`;
   let result;
-  switch (i) {
+  switch (operationIndex) {
     case 0:
       result = num1 + num2;
       break;
@@ -25,4 +26,4 @@ const calc = () => {
   return [question, answer];
 };
 
-export default calc;
+export default doStepCalc;

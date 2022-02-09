@@ -1,8 +1,9 @@
-const isCommonDenominator = (num1, num2, i) => num1 % i === 0 && num2 % i === 0;
+const isCommonDenominator = (num1, num2, denom) => num1 % denom === 0 && num2 % denom === 0;
 
-const gcd = () => {
-  const num1 = Math.floor(Math.random() * 101);
-  const num2 = Math.floor(Math.random() * 101);
+const doStepGcd = () => {
+  const maxNumber = 100;
+  const num1 = Math.floor(Math.random() * (maxNumber + 1));
+  const num2 = Math.floor(Math.random() * (maxNumber + 1));
   const question = `${num1} ${num2}`;
 
   let result;
@@ -19,4 +20,4 @@ const gcd = () => {
   return [question, answer];
 };
 
-export default gcd;
+export default doStepGcd;
