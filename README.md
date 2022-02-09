@@ -22,7 +22,7 @@ This project is is created during training at [Hexlet](https://ru.hexlet.io), a 
 ### Setup
 
     make install
-    npm link
+    sudo npm link
 
 ### Run
 
@@ -35,13 +35,13 @@ This project is is created during training at [Hexlet](https://ru.hexlet.io), a 
 
 ### Demo 
 
-Setup [video](https://asciinema.org/a/467039)
+Setup [video](https://asciinema.org/a/467737)
 
 Brain Calc [video](https://asciinema.org/a/467336)
 
 Brain Progression [video](https://asciinema.org/a/467504)
 
-Brain Even [video](https://asciinema.org/a/467039)
+Brain Even [video](https://asciinema.org/a/467738)
 
 Brain Gcd [video](https://asciinema.org/a/467356)
 
