@@ -4,8 +4,8 @@ const doStepProgression = () => {
   const progressionLength = 10;
 
   const progression = [];
-  let current = Math.floor(Math.random() * (maxNumber + 1));
-  const progressionStep = Math.floor(Math.random() * (maxProgressionStep + 1));
+  let current = Math.floor(Math.random() * maxNumber) + 1;
+  const progressionStep = Math.floor(Math.random() * maxProgressionStep) + 1;
   for (let i = 0; i < progressionLength; i += 1) {
     progression.push(current);
     current += progressionStep;
