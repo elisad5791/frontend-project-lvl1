@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import initGame from '../src/index.js';
+import initEven from '../src/games/even.js';
 
-const gameTitle = 'even';
-const gameRounds = 3;
-
-initGame(gameTitle, gameRounds);
+initEven();

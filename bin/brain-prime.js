@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import initGame from '../src/index.js';
+import initPrime from '../src/games/prime.js';
 
-const gameTitle = 'prime';
-const gameRounds = 3;
-
-initGame(gameTitle, gameRounds);
+initPrime();

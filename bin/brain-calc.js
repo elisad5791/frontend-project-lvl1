@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import initGame from '../src/index.js';
+import initCalc from '../src/games/calc.js';
 
-const gameTitle = 'calc';
-const gameRounds = 3;
-
-initGame(gameTitle, gameRounds);
+initCalc();

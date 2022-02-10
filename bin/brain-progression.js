@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import initGame from '../src/index.js';
+import initProgression from '../src/games/progression.js';
 
-const gameTitle = 'progression';
-const gameRounds = 3;
-
-initGame(gameTitle, gameRounds);
+initProgression();
