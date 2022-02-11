@@ -6,7 +6,6 @@ const initGame = (roundsCount, rulesMessage, generateData) => {
   console.log(`Hello, ${userName}!`);
   console.log(rulesMessage);
 
-  let result = true;
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateData();
 
@@ -17,14 +16,11 @@ const initGame = (roundsCount, rulesMessage, generateData) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      result = false;
-      break;
+      return;
     }
   }
 
-  if (result) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default initGame;

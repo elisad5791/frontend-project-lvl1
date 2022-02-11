@@ -10,20 +10,19 @@ const isPrime = (num) => {
   return true;
 };
 
+const generateData = () => {
+  const minNumber = 1;
+  const maxNumber = 100;
+  const num = getRandomNumber(minNumber, maxNumber);
+  const question = String(num);
+  const answer = isPrime(num) ? 'yes' : 'no';
+
+  return [question, answer];
+};
+
 const initPrime = () => {
   const roundsCount = 3;
   const rulesMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  const generateData = () => {
-    const minNumber = 1;
-    const maxNumber = 100;
-    const num = getRandomNumber(minNumber, maxNumber);
-    const question = String(num);
-    const answer = isPrime(num) ? 'yes' : 'no';
-
-    return [question, answer];
-  };
-
   initGame(roundsCount, rulesMessage, generateData);
 };
 
