@@ -21,6 +21,8 @@ This project is is created during training at [Hexlet](https://ru.hexlet.io), a 
 
 ### Setup
 
+    git clone git@github.com:elisad5791/frontend-project-lvl1.git
+    cd frontend-project-lvl1
     make install
     sudo npm link
 
