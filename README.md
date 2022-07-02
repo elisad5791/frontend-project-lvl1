@@ -19,6 +19,10 @@ Games:
 
 This project is is created during training at [Hexlet](https://ru.hexlet.io), a programming online school.
 
+### System requirements
+
+    node.js
+
 ### Setup
 
     git clone git@github.com:elisad5791/frontend-project-lvl1.git
